@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arlecchino - Furniture E-Commerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Arlecchino</a>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link">Furniture</a></li>
+                <li><a href="#" class="nav-link">Shop</a></li>
+                <li><a href="#" class="nav-link">About Us</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="cart-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span class="cart-badge">0</span>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Make Your Interior More<br>Minimalistic & Modern</h1>
+            <p>Turn your room with panto into a lot more minimalist<br>and modern with ease and speed</p>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search furniture" id="searchInput">
+                <button class="search-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="features section-padding">
+        <div class="container">
+            <div class="section-header-row">
+                <h2>Why Choosing Us</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Luxury facilities</h3>
+                    <p>The advantage of hiring a workspace with us is that gives you comfortable service and all-around facilities.</p>
+                    <a href="#" class="more-info">More Info <span class="arrow">→</span></a>
+                </div>
+                <div class="feature-card">
+                    <h3>Affordable Price</h3>
+                    <p>You can get a workspace of the highest quality at an affordable price and still enjoy the facilities.</p>
+                    <a href="#" class="more-info">More Info <span class="arrow">→</span></a>
+                </div>
+                <div class="feature-card">
+                    <h3>Many Choices</h3>
+                    <p>We provide many unique work space choices so that you can choose the workspace to your liking.</p>
+                    <a href="#" class="more-info">More Info <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products section-padding">
+        <div class="container">
+            <h2 class="text-center">Best Selling Product</h2>
+            
+            <div class="tabs-container">
+                <button class="tab-btn active" data-category="chair">Chair</button>
+                <button class="tab-btn" data-category="beds">Beds</button>
+                <button class="tab-btn" data-category="sofa">Sofa</button>
+                <button class="tab-btn" data-category="lamp">Lamp</button>
+            </div>
+
+            <div class="products-wrapper">
+                <div class="products-grid" id="productsContainer">
+                    </div>
+            </div>
+            
+            <div class="view-all-container">
+                <a href="#" class="view-all-btn">View All <span class="arrow">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>Arlecchino</h3>
+                <p>The advantage of hiring a workspace with us is that gives you comfortable service and all-around facilities.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Email Marketing</a></li>
+                    <li><a href="#">Campaigns</a></li>
+                    <li><a href="#">Branding</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Furniture</h4>
+                <ul>
+                    <li><a href="#">Beds</a></li>
+                    <li><a href="#">Chair</a></li>
+                    <li><a href="#">All</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Follow Us</h4>
+                <ul class="social-list">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>Copyright © 2025</p>
+            <div class="legal-links">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
