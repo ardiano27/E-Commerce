@@ -163,6 +163,157 @@ ul { list-style: none; }
     text-align: center;
 }
 
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.sub-heading {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.heading-lg {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: var(--text-dark);
+}
+
+.desc-text {
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    max-width: 90%;
+}
+
+.more-info-btn {
+    color: var(--primary-color);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+}
+
+.more-info-btn .arrow {
+    transition: transform 0.3s;
+}
+
+.more-info-btn:hover .arrow {
+    transform: translateX(5px);
+}
+
+/* --- Experiences Section Specifics --- */
+.exp-image-wrapper {
+    position: relative;
+    padding-left: 30px; /* Space for blob */
+}
+
+/* Background blob effect (bentuk abstrak di belakang gambar) */
+.blob-bg {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(229, 132, 17, 0.1) 0%, rgba(229, 132, 17, 0.05) 100%);
+    border-radius: 40px 0 40px 40px;
+    z-index: -1;
+}
+
+.exp-img {
+    width: 100%;
+    border-radius: 40px 40px 40px 0; /* Unik border radius sesuai gaya modern */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    display: block;
+    object-fit: cover;
+    height: 450px;
+}
+
+/* --- Materials Section Specifics --- */
+.materials-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr; /* Kolom kanan lebih lebar sedikit */
+    gap: 20px;
+}
+
+.grid-col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mat-card {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.mat-card:hover {
+    transform: translateY(-5px);
+}
+
+.mat-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.grid-col-1 .mat-card {
+    height: 220px; /* Tinggi fix untuk gambar kecil */
+}
+
+.grid-col-2 .mat-card.tall {
+    height: 460px; /* Tinggi total menyamai kolom 1 */
+}
+
+/* --- Responsive Layout (Mobile) --- */
+@media (max-width: 992px) {
+    .grid-2-col {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .align-center {
+        justify-items: center;
+    }
+
+    /* Membalik urutan untuk Materials di mobile agar Text dulu baru Gambar */
+    .reverse-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desc-text {
+        margin: 0 auto 30px auto;
+    }
+    
+    .exp-img, .blob-bg {
+        border-radius: 20px;
+    }
+
+    .exp-image-wrapper {
+        padding-left: 0;
+    }
+
+    .heading-lg {
+        font-size: 2.2rem;
+    }
+}
+
 .feature-card {
     padding: 20px;
 }
